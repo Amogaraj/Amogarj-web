@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AmogaRaj.S - Main Page</title>
+  <link rel="stylesheet" href="zohocss.css">
+</head>
+<body class="light-mode">
+
+  <header>
+    <div class="welcome-wrapper">
+      <div class="welcome-text">Welcome To Visit Our Website</div>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div id="menu" class="dropdown hidden">
+      <a href="index.html">Login</a>
+      <a href="#user">User Setting</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#company">Company</a>
+      <a href="#contact">Contact</a>
+      <a href="index.html">Logout</a>
+      <div class="theme-toggle">
+        <label>Dark Mode:</label>
+        <input type="checkbox" id="themeSwitch">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="company-name">AmogaRaj.S</h1>
+
+    <section class="content-box" id="about">
+      <h2>About Us</h2>
+      <p>Amoga Raj is a modern tech company focused on delivering AI-based automation tools for businesses worldwide.
+      We strive to empower companies with innovative technology solutions that enhance productivity, reduce costs, and 
+      improve customer engagement. Our team of experienced developers and data scientists collaborate to create intelligent 
+      systems tailored to each client’s specific needs. We believe in the power of automation and digital transformation 
+      to revolutionize industries. From startups to large enterprises, we provide scalable solutions that evolve with your 
+      business. Our values are rooted in innovation, integrity, and customer success. We continuously invest in research 
+      and development to stay ahead of the curve. Whether it's chatbots, process automation, or analytics dashboards, we 
+      deliver top-notch services. At Amoga Raj, your digital success is our mission. Let’s grow together in this intelligent 
+      era of technology.</p>
+    </section>
+
+    <section class="content-box" id="services">
+      <h2>Services</h2>
+      <p>We provide top-tier IT services including AI chatbots, data automation, and cloud integration. Our services help 
+      streamline operations, reduce manual work, and improve customer satisfaction. From automated messaging to predictive 
+      analytics, we tailor our tools to your needs. We offer dedicated support and ongoing training to ensure you succeed 
+      with our solutions. Our team is available 24/7 for emergency support. We also provide scalable cloud solutions for 
+      storage, hosting, and application deployment. Our consultants guide you through digital transformation efficiently. 
+      Whether it’s integrating APIs or managing databases, we’ve got you covered. We focus on innovation, security, and 
+      performance. Our goal is to help you grow with technology as your strength.</p>
+    </section>
+
+    <section class="content-box" id="company">
+      <h2>Company</h2>
+      <p>Founded in 2020, Amoga Raj is headquartered in India and has a global client base. Our mission is to deliver 
+      innovative digital products that help businesses automate and grow. We started with just 3 developers and now 
+      employ over 100 talented professionals. Our culture is built on creativity, learning, and commitment to client 
+      success. We have won multiple startup awards and are backed by tech investors. Amoga Raj partners with companies 
+      of all sizes from various industries like healthcare, retail, and finance. Our leadership team includes experts 
+      in AI, cybersecurity, and enterprise software. We value transparency, reliability, and excellence. We operate on 
+      agile principles and deliver fast results. Our belief: great software solves real problems.</p>
+    </section>
+
+    <section class="content-box">
+      <h2>Product</h2>
+      <p>Our flagship product, SmartBot 2.0, offers multilingual AI chatbot support for websites, WhatsApp, and Messenger. 
+      It's designed for easy use with drag-and-drop conversation builders. Businesses use it to reduce support costs and 
+      improve customer experience. The bot can take orders, book appointments, and handle FAQs automatically. It also 
+      integrates with CRMs like Zoho, Salesforce, and HubSpot. SmartBot uses natural language understanding to make 
+      conversations feel human. It also comes with reporting dashboards and live chat handoff. The system is hosted 
+      securely in the cloud and updates automatically. We also offer custom branding, voice recognition, and speech-to-text 
+      support. It’s mobile-friendly and supports multi-channel delivery.</p>
+    </section>
+
+    <section class="content-box">
+      <h2>Pricing</h2>
+      <p>We offer three pricing tiers to suit different business sizes. The Basic plan is $9.99/month and includes 500 
+      messages, 1 chatbot, and email support. The Pro plan costs $29.99/month and offers unlimited messages, 5 chatbots, 
+      API integration, and analytics. The Enterprise plan is custom-priced and supports large deployments, priority 
+      support, and a dedicated manager. All plans include onboarding and documentation. Discounts are available for 
+      nonprofits and educational institutions. You can cancel anytime with no lock-in contracts. We accept payments via 
+      credit card, PayPal, or direct bank transfer. You also get 14-day free trials on every plan. We ensure secure billing 
+      and instant activation. Upgrade or downgrade anytime from your dashboard.</p>
+    </section>
+
+    <div class="contact-btn">
+      <button onclick="showContactForm()">Contact</button>
+    </div>
+
+    <section class="content-box" id="contact" style="display: none;">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="cname">Name</label>
+        <input type="text" id="cname" required>
+
+        <label for="cemail">Email</label>
+        <input type="email" id="cemail" required>
+
+        <label for="country">Country</label>
+        <select id="country" required>
+          <option value="">--Select Country--</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>China</option>
+          <option>UK</option>
+          <option>Germany</option>
+          <option>France</option>
+          <option>Australia</option>
+          <option>Brazil</option>
+          <option>Japan</option>
+          <option>Canada</option>
+          <option>Italy</option>
+          <option>Spain</option>
+          <option>Russia</option>
+          <option>Mexico</option>
+          <option>Netherlands</option>
+        </select>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Disclaimer: This website is a demo project for educational purposes only. The data shown here is not real and should not be used in production.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .login-box,
+body.dark-mode .content-box,
+body.dark-mode .dropdown,
+body.dark-mode .contact-btn button {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark-mode a {
+  color: #00aced;
+}
+
+/* Hide menu by default with this class */
+.hidden {
+  display: none !important;
+}
+
+/* Gradient background for login/register pages */
+.gradient-bg {
+  background: linear-gradient(135deg, #ff4e50, #1e90ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login/Register box */
+.login-box {
+  background: #fff;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login-box input,
+.login-box select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #218838;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Header and animation */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.welcome-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  background-color: #222;
+  margin-bottom: 5px;
+}
+
+.welcome-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 18px;
+  color: #fff;
+  animation: scroll-left 15s linear infinite;
+  left: 100%;
+}
+
+@keyframes scroll-left {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+
+/* Menu icon */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  text-align: right;
+  margin-top: 5px;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 65px;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 5px gray;
+  padding: 10px;
+  z-index: 100;
+  width: 200px;
+  border-radius: 6px;
+}
+
+.dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 8px 0;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode .dropdown a {
+  color: white;
+}
+
+/* Theme switch */
+.theme-toggle {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Company name */
+.company-name {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+/* Section boxes */
+.content-box {
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+body.dark-mode .content-box {
+  background: #1e1e1e;
+}
+
+/* Contact button */
+.contact-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-btn button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 30px;
+}
